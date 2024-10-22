@@ -4,7 +4,7 @@
 /* Import Styles */
 @import url("./../styles/header.css");
 @import url("./../styles/Home/Hero.css");
-@import url("./../styles/Home/ProductCard.css");
+@import url("./../styles/Products/ProductCard.css");
 
 /* Manage Tailwind Container */
 @layer base {
@@ -37,5 +37,13 @@ body::-webkit-scrollbar-thumb {
 @supports not selector(::-webkit-scrollbar) {
   body {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
 }

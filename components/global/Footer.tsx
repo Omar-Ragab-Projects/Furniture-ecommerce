@@ -75,7 +75,7 @@ function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="container copyright border-t pt-8 text-sm">
+      <div className="container copyright border-t py-8 text-sm">
         &copy; {new Date().getFullYear()} furino. Made With 💛 By Omar Ragab.
       </div>
     </footer>

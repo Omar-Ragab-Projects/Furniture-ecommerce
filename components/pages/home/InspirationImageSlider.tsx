@@ -42,8 +42,9 @@ function InspirationImageSlider() {
               src={img}
               alt="Image Slider"
               width={300}
-              height={200}
+              height={400}
               className="select-none"
+              style={{ width: "300px", height: "400px" }}
             />
           );
         })}

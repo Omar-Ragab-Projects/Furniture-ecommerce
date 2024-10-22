@@ -1,8 +1,8 @@
 header {
-  @apply border-b relative;
+  @apply border-b z-50 bg-white sticky top-0;
 }
 header .container {
-  @apply flex justify-between items-center h-[100px];
+  @apply flex justify-between items-center h-[80px];
 }
 header a img {
   @apply max-lg:w-[108px] max-lg:h-[58px];
@@ -11,12 +11,12 @@ header ul.links {
   @apply flex items-center gap-8;
 }
 header ul.links li a {
-  @apply px-4 py-3 hover:bg-gray-100 hover:border-b transition rounded-2xl text-lg font-medium;
+  @apply px-4 py-3 text-lg font-medium;
 }
 @media (max-width: 1023px) {
   header ul.links {
-    @apply absolute flex-col items-center right-0 top-[100px] bg-white border border-solid border-[#eee] p-5 w-[300px]  gap-4 shadow-lg z-50;
-    transition: 0.3s;
+    @apply absolute flex-col items-center right-0 top-[80px] bg-white border border-solid border-[#eee] p-5 w-[300px]  gap-4 shadow-lg z-50;
+    transition: 0.05s;
   }
   header ul.links li {
     @apply w-full text-center;

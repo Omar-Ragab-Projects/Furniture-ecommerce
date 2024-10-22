@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/global/Header";
 import Footer from "@/components/global/Footer";
+import StoreProvider from "./StoreProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,7 +18,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Furniro",
-  description: "Discover New Furnitures Everyday.",
+  description: "Discover New Furniture Everyday.",
 };
 
 export default function RootLayout({
@@ -31,9 +32,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <main>
-          <Header />
-          {children}
-          <Footer />
+          <StoreProvider>
+            <Header />
+            {children}
+            <Footer />
+          </StoreProvider>
         </main>
       </body>
     </html>
